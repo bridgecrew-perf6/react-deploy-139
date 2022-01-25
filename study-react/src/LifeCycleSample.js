@@ -12,6 +12,7 @@ class LifeCycleSample extends Component {
     console.log("construcor");
   }
 
+  //이 함수는 바뀐 상태값을 지금 컴포넌트의 상태값에 바인딩 하는 것이다
   static getDerivedStateFromProps(nextProps, prevState) {
     console.log("getDerivedStateFromProps");
     if (nextProps.color !== prevState.color) {
