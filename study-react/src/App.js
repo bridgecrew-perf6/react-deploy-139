@@ -1,7 +1,7 @@
 import React from "react";
-import InfoReducer from "./InfoReducer";
+import RefSample from "./RefSample";
 const App = () => {
-  return <InfoReducer />;
+  return <RefSample />;
 };
 
 export default App;
