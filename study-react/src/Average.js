@@ -9,12 +9,13 @@ const getAverage = (numbers) => {
 const Average = () => {
   const [list, setList] = useState([]);
   const [number, setNumber] = useState("");
+  const inputEl = useRef(null)
 
   const onChange = useCallback((e) => {
     setNumber(e.target.value);
   }, []);
   const onInsert = useCallback(
-    (e) => {
+    () => {
       const nextList = list.concat(parseInt(number));
       setList(nextList);
       setNumber("");
